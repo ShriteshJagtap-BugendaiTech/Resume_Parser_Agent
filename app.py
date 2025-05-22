@@ -441,7 +441,7 @@ if st.session_state.page == "main":
                                                 <div style="display: flex; align-items: flex-start; margin-bottom: 10px;">
                                                     <img src="{user_avatar_url}" width="35" style="border-radius: 50%; margin-right: 10px;">
                                                     <div style="background-color: #e1e1e1; color: black; padding: 10px; border-radius: 10px; max-width: 80%;">
-                                                        {html.escape(msg['content'])}
+                                                        {msg['content']}
                                                     </div>
                                                 </div>
                                                 """,
@@ -452,7 +452,7 @@ if st.session_state.page == "main":
                                                 f"""
                                                 <div style="display: flex; align-items: flex-start; justify-content: flex-end; margin-bottom: 10px;">
                                                     <div style="background-color: #0084ff; color: white; padding: 10px; border-radius: 10px; max-width: 80%; margin-right: 10px;">
-                                                        {html.escape(msg['content'])}
+                                                        {msg['content']}
                                                     </div>
                                                     <img src="{bot_avatar_url}" width="35" style="border-radius: 50%;">
                                                 </div>
