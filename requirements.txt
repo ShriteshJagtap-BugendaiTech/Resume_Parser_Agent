@@ -4,6 +4,7 @@ numpy
 requests
 pillow
 PyMuPDF
+paddlepaddle
 paddleocr
 faiss-cpu
 langchain
