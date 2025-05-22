@@ -31,7 +31,7 @@ def check_password():
                 if username == username1 and password == password1:
                     st.session_state.authenticated = True
                     st.success("Logged in successfully! 🎉")
-                    st.experimental_rerun()
+                    st.rerun()
                 else:
                     st.error("Invalid username or password. Please try again.")
 
