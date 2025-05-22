@@ -15,13 +15,7 @@ from langchain_core.runnables import RunnableLambda
 from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import MemorySaver
 from search3 import search_router
-# === Utility ===
-# def extract_clean_json(text: str) -> str:
-#     match = re.search(r"```(?:json)?\s*({.*?})\s*```", text, re.DOTALL)
-#     if match:
-#         return match.group(1)
-#     match = re.search(r"({.*})", text, re.DOTALL)
-#     return match.group(1) if match else text
+
 
 ENTITY_VECTORSTORE_DIR_A1 = "resume_entities_chatbot"
 
