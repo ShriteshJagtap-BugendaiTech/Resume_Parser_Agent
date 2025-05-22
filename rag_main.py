@@ -35,9 +35,9 @@ def search_resume(query: str) -> str:
         for field in ["Name", "Email", "Skills", "Experience", "Education"]:
             value = parsed.get(field)
             if value:
-                #summary_lines.append(f"{field}: {value}")
-                clean_value = str(value).encode("ascii", "ignore").decode()  # Remove non-ASCII
-                summary_lines.append(f"{field}: {clean_value}")
+                summary_lines.append(f"{field}: {value}")
+                # clean_value = str(value).encode("ascii", "ignore").decode()  
+                # summary_lines.append(f"{field}: {clean_value}")
 
 
         results.append("\n".join(summary_lines))
