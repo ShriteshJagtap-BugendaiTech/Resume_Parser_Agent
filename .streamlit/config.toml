@@ -7,4 +7,6 @@ textColor="#ffffff"
 font="sans serif"
 [runner]
 fastReruns = false
+[watcher]
+type = "poll"
 
