@@ -7,6 +7,8 @@ import base64
 import urllib.parse
 import shutil
 # Initialize SupervisorAgent
+import os
+os.environ["STREAMLIT_WATCHER_TYPE"] = "none"
 
 folders=["converted","resumes"]
 for folder in folders:
