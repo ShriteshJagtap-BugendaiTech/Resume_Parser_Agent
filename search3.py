@@ -17,7 +17,7 @@ import os
 import streamlit as st
 os.environ['GROQ_API_KEY'] = st.secrets["GROQ_API_KEY"]
 # === LLM setup ===
-llm = ChatGroq(model_name="llama3-70b-8192")
+llm = ChatGroq(model_name="llama3-70b-8192",api_key=st.secrets["GROQ_API_KEY"])
 ollama_llm = ChatOllama(model="llama3.2:1b-instruct-q3_K_L")
 
 checkpointer = MemorySaver()
