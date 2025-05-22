@@ -405,6 +405,7 @@ if st.session_state.page == "main":
                                     import pandas as pd
                                     df = pd.DataFrame(records)
                                     df.drop_duplicates(subset=["Email", "Phone"], inplace=True)
+                                    df = df.astype(str)
                                     st.dataframe(df.T, use_container_width=True)
 
                                 except Exception as e:
