@@ -111,10 +111,4 @@ def search_router(query: str, chat_mode: str, thread_id: str):
         #return result
     final_response = f"{model_response.strip()}" #\n\n\n### Resume Links:\n{links_text}
     return final_response
-# if __name__ == "__main__":
-#     query = "Compare top 3 data scientists with Python experience"
-#     mode = "a1"  # or "rag"
-#     thread = "session-1001"
 
-#     print("\n=== AI Search Agent Response ===\n")
-#     print(search_router(query, mode, thread))
