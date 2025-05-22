@@ -167,7 +167,7 @@ if st.session_state.page == "main":
         st.markdown('<div class="orange-box">Upload Resumes</div>', unsafe_allow_html=True)
         with st.container(height=160):
             # uploaded_file = st.file_uploader("Upload Resumes", type=["pdf", "docx"], label_visibility="collapsed", accept_multiple_files=True)
-            uploaded_file = st.file_uploader("Upload your resume", type=["pdf", "docx", "png", "jpg", "jpeg","ppt","pptx"],accept_multiple_files=True, label_visibility="collapsed")
+            uploaded_file = st.file_uploader("Upload your resume", type=["pdf"],accept_multiple_files=True, label_visibility="collapsed")
             st.markdown('</div>', unsafe_allow_html=True)
         if uploaded_file:
             st.session_state.files = [
