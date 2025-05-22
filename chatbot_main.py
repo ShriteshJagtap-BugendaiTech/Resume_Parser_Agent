@@ -17,7 +17,7 @@ def resume_qa_tool(input: str) -> str:
     context = data["context"]
 
     prompt = f"""
-You are an AI assistant that answers questions about resumes.
+You are an AI assistant that answers questions about resumes only.Strictly if questions are not related to resumes then kindly do not answer it.
 
 Here are the combined resumes:
 \"\"\"{context}\"\"\"
