@@ -9,4 +9,6 @@ font="sans serif"
 fastReruns = false
 [watcher]
 type = "poll"
+[server]
+runOnSave = false
 
