@@ -9,6 +9,7 @@ paddleocr
 faiss-cpu
 langchain
 langchain-community
+langchain_huggingface
 langchain-core
 langchain-openai
 langchain-ollama
