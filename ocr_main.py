@@ -110,7 +110,7 @@ def clean_text(text: str) -> str:
     return "\n".join(line.strip() for line in text.splitlines() if line.strip() and not line.strip().lower().startswith("page")).strip()
 
 # === OCR Processor ===
-ocr_engine = OCRHandler(groq_api_key=os.getenv("GROQ_API_KEY"))
+ocr_engine = OCRHandler(groq_api_key=st.secrets["GROQ_API_KEY"])
 
 def process_resumes(state: ResumeState) -> ResumeState:
     file_paths = state["converted_paths"]
