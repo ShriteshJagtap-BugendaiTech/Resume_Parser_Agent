@@ -10,5 +10,6 @@ fastReruns = false
 [watcher]
 type = "poll"
 [server]
-runOnSave = false
+fileWatcherType = "none"
+
 
