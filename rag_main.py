@@ -49,17 +49,17 @@ tools = [search_resume]
 
 # === Setup memory checkpoint ===
 checkpointer = MemorySaver()
-groq_api_key=st.secrets["GROQ_API_KEY"],
+groq_api_key = st.secrets["GROQ_API_KEY"]
 # === Setup multiple LLMs ===
 
 # models=[
 #     ChatGroq(api_key=groq_api_key, model_name="llama-3.1-70b-versatile"),
 # ]
 models = [
-    ChatGroq( api_key=groq_api_key, model_name="llama-3.3-70b-versatile"),
-    ChatGroq( api_key=groq_api_key, model_name="llama3-70b-8192"),
-    ChatGroq( api_key=groq_api_key, model_name="llama-3.1-8b-instant"),
-    ChatGroq( api_key=groq_api_key, model_name="mistral-saba-24b")
+    ChatGroq(model_name="llama-3.3-70b-versatile", api_key=groq_api_key),
+    ChatGroq(model_name="llama3-70b-8192", api_key=groq_api_key),
+    ChatGroq(model_name="llama-3.1-8b-instant", api_key=groq_api_key),
+    ChatGroq(model_name="mistral-saba-24b", api_key=groq_api_key)
 ]
 
 agent_prompt = """
