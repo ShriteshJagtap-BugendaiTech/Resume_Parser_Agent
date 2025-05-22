@@ -1,0 +1,72 @@
+Page 1:
+The text in the image is as follows:
+Gadela Lakshmi Prasanna
+Mobile: (+91) 9121030704
+Email: lakshmiprasannagadela@gmail.com
+trailblazer.me/id/lakshmigadela
+Guntur, Andhra Pradesh,
+522603
+## Career objective:
+To build a successful and challenging career in the Salesforce by making effective use of developing skills and upgrading continuously to the latest and powerful technology available.
+## Professional Summary:
+1+ Years of experience as a Salesforce Developer and I also have knowledge in nCino.
+Worked with Apex Triggers for both Salesforce and nCino standard, custom objects for all the events.
+Worked with all types of classes like Test, Wrapper, Batch, Queueble.
+Also worked with LWC for creating a single page application.
+## Educational Qualification:
+Graduation: B.Tech C.S.E from JNTUk University in 2020.
+Intermediate: Board of Intermediate Education in 2016.
+SSC: Secondary School Certificate in 2014.
+## Work Experience:
+### TATA Consultancy Services, Salesforce Developer
+#### Client( Key Bank, USA)
+##### Chennai, TN
+Jan-2021 - Till Date
+> Worked with nCino, to complete the client requirements.
+> Worked on Apex classes.
+> Created a trigger on nCino standard object that needed to be fired when a user performed action.
+> Worked on Lightning Web Components, in that used decorators and imperatively calling Apex classes, using wire adapter.
+**Technical Skills:**
+> Fundamentals object-oriented programming concepts
+> MVC style of designing
+> Data management, modeling
+> Apex fundamentals
+> Lightning Web Components
+> Developer console
+> SQL, Salesforce Object Query Language
+> JavaScript
+> C, Java, Basics of Python
+> HTML, CSS
+**Certifications:**
+> I'm a 1x Ranger in trailblazer with 4 super-badges.
+> Certified salesforce administrator(201).
+> Certified in basics of nCino(101).
+**Projects:**
+1. **Designation: Salesforce Engineer**
+**Roles and Responsibilities:**
+Worked on apex based on the clients requirements.
+Worked with Triggers and Test classes.
+Created a trigger on nCino standard object that needed to be fired when a user performed action.
+Created a Batch class for that to bulkify.
+Created a Test class for that with the clients required scenarios using the static resource data (and same time also used the Static Meta Objects to test which one will be better to use for Test class) by using the Wrapper class.
+And also created an apex class for inserting the bulk records of nCino standard objects.
+2. Designation: Salesforce Developer
+Roles and Responsibilities:
+Supporting clients and providing 24/7 production support in LWC& Apex with
+the help of nCino.
+Worked on Lightning Web Components to create a page that needs to be
+popped-up when an user performs some action.
+Passing parameters from LWC to Apex Class and returning the required values
+from apex to LWC.
+And worked on a database(Apex) using a wire adapter to get the data of the
+current standard object and its child object& related object records.
+Personal Details:
+Name                                  : Lakshmi Prasanna G
+Nationality                           : Indian
+Gender                                : Female
+Date of Birth                         : 07-08-1999
+Note                                  : Currently serving notice period.
+Declaration:
+I hereby declare that the information furnished above is true and correct to the best of
+my knowledge and belief.
+(Lakshmi Prasanna Gadela)

@@ -1,0 +1,103 @@
+DARSHANA RAUT
+
+Email ID : darshanaraut.sfdc@gmail.com
+Trailhead ID : https://trailblazer.me/id/draut99
+Linkedin ID : www.linkedin.com/in/darshana-raut-551442224
+Mobile No.  : 8767820587, 7517475446.
+
+OBJECTIVES
+
+"I would like to be a part of an salesforce where I could use and enhance my knowledge and talent for the developent of both organization and myself"
+
+## PROFILE SUMMARY
+
+• Proficient in Configuration ,Customization, Lightning Aura Component on Salesforce.com .
+• Experience in Creating, Managing, Implementing and customizing custom objects.
+• Involved in automating different business process using Process Builder, Workflow Rules and Approval Processes
+• Good knowledge and understanding of SFDC Security and Sharing Model, Organization- Wide-Defaults (OWD).
+• Experience in creating Reports and Dashboards as per business requirement.
+• Proficiency in SFDC configuration like Profiles, Roles, User Management, Page Layout, Record Types, Custom Tabs and Fields.
+• Good Knowledge of SOQL, SOSL and Governor limit.
+• Good knowledge of Object Relationships.
+• Involved in Data Migration using Data Loader and Import Wizard.
+• Designed and developed Apex Triggers, Apex Classes, Batch Apex, Controller Classes, Extensions and Lightning Aura Component for various functional needs in the application.
+
+## TECHNICAL SKILLS
+
+• C, C++ .
+• Salesforce Admin, Development, Apex Trigger, Test Classes, Batch Apex, Lightning Aura Components,Lightning Web Component,Integeration, SOQL, SOSL.
+
+EDUCATION
+
+| Course | Board/University | School/College | Year of Passout |
+| --- | --- | --- | --- |
+| BE | RTMNU | St. Vincent Pallotti College Of Engineering & Technology | 2021 |
+| Polytechnic | MSBTE | KDK Polytechnic | 2018 |
+| HSC | MS Board | Ashok Junior College | 2016 |
+| SSC | MS Board | JVVV | 2014 |
+
+ACTIVE TRAILHEAD USER:
+
+Points : 64,750.
+Badges : 63.
+Super Badges : 2.
+
+EXPERIENCE
+
+Salesforce Trainee at Ceptra InfoTech, Nagpur. (0-1 Year of Experience)
+6 Months Internship + 6 Months Live Projects.
+
+INTERNSHIP PROJECT.
+
+PROJECT-1
+
+Orange City Hospital Management.
+
+Orange City Hospital project provides a platform to automate all the health care activities where we can maintain all the data of Patients, Doctors, Billing.
+
+Project OverView.
+
+Orange City Hospital provides a platform to automate the all the healthcare activities. It provides health data exchange capabilities. Clinicians get a single, fully integrated view of patients within their own native EHR and workflow. That gives them immediate access to actionable information for better decision making and superior care coordination.
+
+Roles & Responsibilities.
+
+• Customize and personalize Salesforce.com based on requiments.
+• Created Objects and Validation Rules inside Salesforce.com and Mapping them to the existing functionalities and Objects.
+• Maintain and developed the Custom objects, Custom fields, Custom tabs, and Validation rules.
+• Customized different page layouts and assigned them for different profile users
+• Created Workflow Rules, Tasks, Email Alerts, and Components to the needs of the application.
+• Involved in creating action components based on client requiments.
+• Import & Export of the Bulk data through Data Loader.
+• Created Approval Process to the needs of the application.
+• Writing Trigger for cascade deletion.
+
+**PROJECT-2**
+
+Trackon Courier Service.
+
+Trackon Courier Service Project provides a platform to automate Business activities where you can maintain all the data of your Agents,Customers, Billings and Couriers.
+
+**Project OverView**
+
+Trackon Project is a platform to maintain all the Data regarding our Agents and their customers . Agents gets fully integrated view of their of their own customers.That gives them immediate access to actionable information for providing better services.
+
+**Roles & Responsibilities.**
+
+* Maintain and developed the Custom objects, Custom fields, Custom tabs, and Validation rules.
+* Provide required relationships to my custom objects.
+* Proper use of Automation tools for sending Email Alerts, Approval Process for Hiring new Agent and providing leaves.
+* Created Workflow Rules, Tasks, Validation and Components to the needs of the application.
+* The use of trigger to calculate number of customers per agent & total amount Collected by agent from their respective customers.
+* Also tried to make use SLDS, LDS, TOAST Component for creating quick simple form.
+
+**PERSONAL INFORMATION**
+
+| Full Name | Darshana Janardan Raut. |
+| Date Of Birth | 28-7-1999 |
+| Mobile No. | 8767820587, 7517475446 |
+| Marital Status | UnMarried. |
+| Language Known | English , Hindi ,Marathi. |
+
+I hereby declare that the information that I have furnished is authentic, and true to the best of my knowledge.
+
+Darshana Raut

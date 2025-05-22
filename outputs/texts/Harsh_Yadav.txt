@@ -1,0 +1,67 @@
+Page 1:
+Harsh Yadav
+Phone: +917465925183
+Email : ramharsh5400@gmail.com
+Linkedin :linkedin.com/in/harsh-yadav-499471152
+Github :https://github.com/HPYC1305KABU
+Profile
+Want to gain experience in my domain and apply the knowledge obtained in order to achieve excellence and provide Effective progress and growth to the I.T.Industry.
+ACADEMIC BACKGROUND
+| Year(s) | Qualification - Degree / Diploma / Certificate | Board/University | College / Institute/ University | Percentage / CGPA |
+| --- | --- | --- | --- | --- |
+| 2017-2021 | B. Tech-Computer Science | UNIVERSITY OF PETROLEUM AND ENERGY STUDIES | UPES DEHRADUN | 7.35 |
+| 2016 | XII | Board of high school And intermediate U.P | BSSICS Pur Ninaya Kanpur Dehat | 78% |
+| 2014 | X | C.B.S.E | Kendriya Vidyalay Mati Akbarpur | 8.0 |
+TRAININGS & PROJECTS UNDERTAKEN
+Institution: Sear Exim Solutions (Data Analyst)
+Mentor: Mr AmanDeep
+Duration: Feb'2020 - Ongoing
+Description: First used specialized software's (microsoft sql server management studio) to fetch data. Using python to design pipeline for store a data in database or for cleaning a raw data, basically using python scripts are using to automate various tasks.
+Institution: SL Cider Technologies (Data Science at Mapzot)
+Mentor: Mr Shobit Gupta
+Duration: Jul' 2020 - Jan' 2021
+Description: First used specialized software's (PostgreSQL) to store and organize data. Identify patterns in data. This includes having a keen sense of pattern detection and anomaly detection. Implement algorithms and statistical models to enable a computer to automatically learn from data and apply the principles of artificial intelligence, database systems, human/computer interaction, numerical analysis, and software engineering.
+MAJOR Project I
+Project Title:Voice Based Speech Recognition System
+Mentor: Mr Anil Kumar
+Duration: Aug' 2020 - Jan' 2021
+Description: Project was based on Python language and it's divide in stages; start by converting the voice, into a consistent form in order to extract the relevant features. Then, the relevant features are selected as inputs for building a classifier model for recognizing of a human voice. In addition, a DL model is being built to automatically extract useful features and feed them into a fully connected artificial neural network (ANN) for classification (Classification techniques : Voice Preprocessing, A/D Signal Conversion, Fast Fourier Transform (FFT) etc ). This technique is used to find/check person through voice and it is also useful for security as well as other purposes. We have also used VLC python library for playing audio clips.
+Institution: BlitzJobs (Data Analyst Intern)
+Mentor: Ms Sweta singh
+Duration: May' 2020 - Jun' 2020
+Description: Developed a Data Filter for cleaning and statistical evaluation of the new startups data containing various features. Design Machine learning Models with the data of Compiled reports, charts and graphs describing and interpreting the findings of the analysis. [Skills used: SQL, Predictive Modeling, Pandas, Numpy, Python.]
+## MINOR Project II
+Project Title:Surveillance System to Check Abnormal Activity
+Mentor: Mr Anil Kumar
+Duration: Jan' 2020 - Apr' 2020
+Description: Project was based on Python language in CSRNet Model using ShangaiTech Dataset. Detection of Abnormality using deep learning, it is a technique of counting the number of people in a scene or image and it is also useful for security as well as other purposes. For train our model we have taken YOLOV3 and COCO dataset for people detection and for video and image streaming we are used OpenCV library.
+## MINOR Project I
+Project Title:Basic Neural Network Model to Predict Diabetes Using National Institute of Diabetes Dataset
+Mentor: Mr Anil Kumar
+Duration: Aug' 2019 - Nov' 2019
+Description: Project was based on C language and to develop a model which predicts whether a patient has diabetes or not. Using Feed forward neural networks are primarily used for supervised learning in cases where the data to be learned is neither sequential nor time dependent.
+Institution: UPES E-CELL (Venture Idea)
+Title: Revenue Generator (propose a model to introduce for how to increase's a tax payer)
+Mentor: Mr. Gunjan Chhabra
+Duration: Sep' 2019 - Nov' 2019
+Description: In our Country there are very less number of people who are paying tax, with the help of our venture we will be helping government to increase tax payers and hence our venture will contribute to the development of country.
+## SKILLS (Professional & Technical)
+- IDE's Used               : Pycharm, Anaconda - Jupyter Notebook, Spyder.
+- Languages               : SQL, C, C++, PYTHON,
+- Operating Systems       : Linux - Ubuntu, Kali, Windows.
+- Technology              : Google-Colab, AWS, Django, IBM Watson, OpenCV.
+- Software's              : Matlab, Microsoft Excel, MangoDB, Microsoft SQL
+## Awards/Certifications
+✓ NPTEL Certification on Tensorflow                     Issued: Dec/19
+✓ Certified Ethical Hacker (EC-COUNCIL) Certificate     Issued: Feb/20
+✓ Professional Certificate IBM Applied AI                 Issued: April/20
+✓ Arctic Code Vault Contributor (GITHUB : Batch)        Issued: June/20
+## Personal Details
+- Date of Birth :                    4th May 1998
+- Father’s Name:                     Mr. Krishna Swaroop
+- Mother’s Name:                    Ms. Suman
+- Gender:                            Male
+- Nationality:                       Indian
+- Permanent Address:                 Akbarpur kanpur dehat (Uttar Pradesh)
+I declare that the details above are correct and true to the best of my knowledge.
+Harsh Yadav

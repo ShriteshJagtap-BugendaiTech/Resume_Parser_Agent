@@ -1,0 +1,53 @@
+The text in the image is:
+
+Resume Overview
+Harsh Yadav
+
+Profile
+
+* Want to gain experience in my domain and apply the knowledge obtained to achieve excellence in the I.T. Industry.
+* Email: harsh1234@example.com
+* Phone: +919876543210
+
+Academic Background
+
+* B.Tech in Computer Science - UPES Dehradun (7.35 GPA)
+* XII - BSSICS Kanpur Dehat (78%)
+* X - Kendriya Vidyalay Mati Akbarpur (8.0 CGPA)
+
+Trainings
+Seair Exim Solutions - Data Analyst
+SL Cider Technologies - Data Science at Mapzot
+
+Projects
+• Voice Based Speech Recognition System
+• Surveillance System to Check Abnormal Activity
+• Basic eNural Network Model to Predict Diabetes
+
+Other Experience
+
+• BlitzJobs - Data Analyst Intern
+• UPES E-CELL Venture: Revenue Generator
+
+Skills
+
+* Languages: SQL, C, C++, Python
+* Tools: Pycharm, Jupyter, Anaconda, AWS, Django
+* Databases: MongoDB, MS SQL
+* Other: OpenCV, IBM Watson
+
+**Certifications**
+
+*   **Tensorflow (NPTEL)**
+*   **Certified Ethical Hacker (EC-Council)**
+*   **IBM Applied AI**
+*   **Arctic Code Vault Contributor (GitHub)**
+
+The text in the image reads:
+
+Personal Details
+
+• DOB: 4 May 1998
+• Father: Krishna Swaroop
+• Mother: Suman
+• Address: Akbarpur, Kanpur Dehat, UP
