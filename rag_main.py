@@ -40,10 +40,7 @@ def search_resume(query: str) -> str:
         results.append("\n".join(summary_lines))
 
     return "\n\n".join(results)
-# def search_resume(query: str) -> str:
-#     """Search resume data for relevant information based on user query."""
-#     docs = vectorstore.similarity_search(query, k=3)
-#     return "\n\n".join(doc.page_content for doc in docs)
+
 
 tools = [search_resume]
 
@@ -156,19 +153,5 @@ def invoke_with_fallback(messages, thread_id):
 
 thread_id = 42
 
-# # === Chat loop ===
-# if __name__ == "__main__":
-#     while True:
-#         query = input("Enter your query (type 'exit' to quit): ")
-#         if query.lower() == "exit":
-#             print("Exiting chat conversation.")
-#             break
 
-#         agent_response = invoke_with_fallback(
-#             [{"role": "user", "content": query}],
-#             thread_id
-#         )
 
-#         print("\nAnswer:")
-#         print(agent_response['messages'][-1].content)
-#         print("\n" + "=" * 50 + "\n")
