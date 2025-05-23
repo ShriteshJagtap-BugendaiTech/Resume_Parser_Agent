@@ -109,8 +109,8 @@ def search_router(query: str, chat_mode: str, thread_id: str):
         print("DEBUG - Raw model response2:" , response["messages"][-1]["content"])
         print("DEBUG - Raw model response3:" , response["messages"][-1].get("content", "No content returned by model."))
         model_response=response["messages"][-1].get("content", "No content returned by model.")
-        if "<function=" in model_response and "</function>" in model_response:
-            model_response = "Not able to connect, Please try later"
+        # if "<function=" in model_response and "</function>" in model_response:
+        #     model_response = "Not able to connect, Please try later"
         # print("The model response is: ",model_response)
         # print("The actual response is: ",response)
         #return result
