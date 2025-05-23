@@ -19,7 +19,7 @@ os.environ['GROQ_API_KEY'] = st.secrets["GROQ_API_KEY"]
 # === LLM setup ===
 llm = ChatGroq(model_name="llama3-70b-8192",api_key=st.secrets["GROQ_API_KEY"])
 ollama_llm = ChatOllama(model="llama3.2:1b-instruct-q3_K_L")
-
+thread_id = 42
 checkpointer = MemorySaver()
 
 # === Resume Formatter ===
@@ -105,7 +105,7 @@ def search_router(query: str, chat_mode: str, thread_id: str):
         messages = [{"role": "user", "content": query}]
         response = invoke_with_fallback(messages, thread_id)
         #safe_output = html.escape(response["messages"][-1].content)
-        model_response = response["messages"][-1].content or response["messages"][-1]["content"]
+        model_response=response["messages"][-1].content or response["messages"][-1]["content"]
         if "<function=" in model_response and "</function>" in model_response:
                 model_response = "Not able to connect to model. Please try again later."
         print("The model response is: ",model_response)
