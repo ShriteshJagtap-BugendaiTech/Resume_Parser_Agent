@@ -105,28 +105,10 @@ def search_router(query: str, chat_mode: str, thread_id: str):
         messages = [{"role": "user", "content": query}]
         response = invoke_with_fallback(messages, thread_id)
         #safe_output = html.escape(response["messages"][-1].content)
-        print("DEBUG - Raw model response:", response["messages"][-1].content)
-        print("DEBUG - Raw model response2:" , response["messages"][-1]["content"])
-        print("DEBUG - Raw model response3:" , response["messages"][-1].get("content", "No content returned by model."))
-        model_response = response["messages"][-1].get("content", "No content returned by model.")
-        if not model_response:
-            print("No response from model")
-            model_response1="No response from Model please try after sometime"
-        if "<function=" in model_response1 and "</function>" in model_response1:
-             model_response2 = response["messages"][-1]["content"]
-        if not model_response2:
-            print("No response from model")
-            model_response2="No response from Model please try after sometime"
-        if "<function=" in model_response2 and "</function>" in model_response2:
-             model_response3 = response["messages"][-1].content
-        if not model_response3:
-            print("No response from model")
-            model_response3="No response from Model please try after sometime"
-        # if "<function=" in model_response and "</function>" in model_response:
-        #     model_response = "Not able to connect, Please try later"
-        # print("The model response is: ",model_response)
-        # print("The actual response is: ",response)
-        #return result
-    final_response = f"{model_response3.strip()}" #\n\n\n### Resume Links:\n{links_text}
+        print("The response is: ",response)
+        model_response = response
+
+    
+    final_response = f"{model_response.strip()}" #\n\n\n### Resume Links:\n{links_text}
     return final_response
 
