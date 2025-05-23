@@ -105,7 +105,7 @@ def search_router(query: str, chat_mode: str, thread_id: str):
         messages = [{"role": "user", "content": query}]
         response = invoke_with_fallback(messages, thread_id)
         #safe_output = html.escape(response["messages"][-1].content)
-        print("DEBUG - Raw model response:", response["messages"][-1])
+        print("DEBUG - Raw model response:", response["messages"][-1].content)
         print("DEBUG - Raw model response2:" , response["messages"][-1]["content"])
         print("DEBUG - Raw model response3:" , response["messages"][-1].get("content", "No content returned by model."))
         model_response=response["messages"][-1].get("content", "No content returned by model.")
