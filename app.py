@@ -10,6 +10,41 @@ import shutil
 
 os.environ['GROQ_API_KEY'] = st.secrets["GROQ_API_KEY"]
 
+username1 = st.secrets["USERNAME"]
+password1= st.secrets["PASSWORD"]
+
+
+# --- Authentication Function ---
+def check_password():
+    def login_form():
+        with st.form("login_form", clear_on_submit=False):
+            st.markdown("### 🔐 Please log in")
+            username = st.text_input("👤 Username", key="username")
+            password = st.text_input("🔑 Password", type="password", key="password")
+            submit = st.form_submit_button("Login")
+
+            if submit:
+                if username == username1 and password == password1:
+                    st.session_state.authenticated = True
+                    st.success("Logged in successfully! 🎉")
+                    st.rerun()
+                else:
+                    st.error("Invalid username or password. Please try again.")
+
+    if "authenticated" not in st.session_state:
+        st.session_state.authenticated = False
+
+    if not st.session_state.authenticated:
+        # Center the form using layout
+        col1, col2, col3 = st.columns([1, 2, 1])
+        with col2:
+            st.image("https://cdn-icons-png.flaticon.com/512/3064/3064197.png", width=100)
+            st.markdown("<h1 style='text-align: center;'>Welcome to Resume Parser Login Page</h1>", unsafe_allow_html=True)
+            login_form()
+        st.stop()
+
+# --- Call login check at the top ---
+check_password()
 
 folders=["converted","resumes"]
 for folder in folders:
