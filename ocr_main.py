@@ -17,7 +17,7 @@ import streamlit as st
 os.environ['GROQ_API_KEY'] = st.secrets["GROQ_API_KEY"]
 # === Conversion Agent ===
 class ConversionAgent:
-    def __init__(self, soffice_path: str = r"C:\Program Files\LibreOffice\program\soffice.exe"):
+    def __init__(self, soffice_path: str ='/usr/bin/soffice'):
         self.soffice_path = soffice_path
 
     def convert_to_pdf(self, input_path: str, output_dir: str = "converted") -> str:
