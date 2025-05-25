@@ -3,7 +3,7 @@ pandas
 numpy
 Pillow
 PyMuPDF
-paddleocr
+paddleocr==2.6.1
 langchain
 langchain-core
 langchain-openai
@@ -14,4 +14,5 @@ langchain-huggingface
 langgraph
 faiss-cpu
 requests
-paddlepaddle
+paddlepaddle==2.5.1
+torch==2.1.0
