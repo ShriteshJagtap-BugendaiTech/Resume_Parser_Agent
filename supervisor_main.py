@@ -16,13 +16,7 @@ from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import MemorySaver
 from search3 import search_router
 
-# === Utility ===
-# def extract_clean_json(text: str) -> str:
-#     match = re.search(r"```(?:json)?\s*({.*?})\s*```", text, re.DOTALL)
-#     if match:
-#         return match.group(1)
-#     match = re.search(r"({.*})", text, re.DOTALL)
-#     return match.group(1) if match else text
+
 
 ENTITY_VECTORSTORE_DIR_A1 = "resume_entities_chatbot"
 
@@ -77,55 +71,7 @@ def ocr_node(state: SupervisorState) -> SupervisorState:
     print("[OCR Node] Extracted:", len(extracted))
     return {"extracted_texts": extracted}
 
-# === Node 2: Entity Extraction
-# def entity_extraction_node(state: SupervisorState) -> SupervisorState:
-#     print("[Entity Node] Starting extraction...")
-#     file_paths = [Path(p) for p in state["file_paths"]]
-#     texts = state["extracted_texts"]
-#     vectorstore = load_entity_vectorstore()
-    
-#     all_entities = []
-#     new_entities = []
-    
-#     for file, text in zip(file_paths, texts):
-#         filename = file.name
-#         existing_entity = None
 
-#         if vectorstore:
-#             for doc in vectorstore.docstore._dict.values():
-#                 if doc.metadata.get("source") == filename:
-#                     try:
-#                         existing_entity = json.loads(doc.page_content)
-#                         print(f"[Entity Node] Found cached entity for: {filename}")
-#                         all_entities.append({"file": filename, "entities": existing_entity})
-#                         break
-#                     except json.JSONDecodeError:
-#                         pass
-
-#         if not existing_entity:
-#             print(f"[Entity Node] Extracting new entity for: {filename}")
-#             result = {}
-#             for step in resume_extraction_agent.stream({"tool_input": text}):
-#                 result.update(step)
-#             #print("The result is:",result)
-#             raw_output = result.get("extract_entities", {}).get("final_output") or result.get("final_output", "")
-
-#             #print("The raw output is:",raw_output)
-#             json_str = extract_clean_json(raw_output)
-#             try:
-#                 parsed = json.loads(json_str)
-#             except json.JSONDecodeError:
-#                 parsed = {"error": "Invalid JSON", "raw_output": raw_output}
-#             parsed["File"] = filename
-#             all_entities.append({"file": filename, "entities": parsed})
-#             new_entities.append({"file": filename, "entities": parsed})
-
-#     if new_entities:
-#         create_entity_vectorstore(new_entities)
-#     #print("Entities", all_entities)
-
-#     print("[Entity Node] Total extracted entities:", len(all_entities))
-#     return {"entities": all_entities}
 def entity_extraction_node(state: SupervisorState) -> SupervisorState:
     print("[Entity Node] Starting extraction...")
     file_paths = [Path(p) for p in state["file_paths"]]
@@ -221,22 +167,7 @@ def qa_node(state: SupervisorState) -> SupervisorState:
     try:
         response = search_router(query, chat_mode, thread)
         answer = response
-        # if chat_mode == "A1": #len(files) <= 3 and
-        #     context = "\n\n".join(texts)
-        #     for step in resume_chat_agent.stream({
-        #         "tool_input": json.dumps({"context": context, "question": query})
-        #     }):
-        #         # Handle both shapes:
-        #         if "qa_tool" in step and "final_output" in step["qa_tool"]:
-        #             answer = step["qa_tool"]["final_output"]
-        #         elif "final_output" in step:
-        #             answer = step["final_output"]
-        #     print("[QA Node Chatbot] Answer:", answer[:100] + "..." if len(answer) > 100 else answer)
-        # else:
-        #     response = invoke_with_fallback([{"role": "user", "content": query}], thread_id)
-        #     #answer = getattr(response['messages'][-1], "content", "[No content]")
-        #     answer = response['messages'][-1].content if hasattr(response['messages'][-1], 'content') else "[No content]"
-        #     print("[QA Node Rag] Answer:", answer[:100] + "..." if len(answer) > 100 else answer)
+       
     except Exception as e:
         answer = f"[QA Error: {str(e)}]"
 
