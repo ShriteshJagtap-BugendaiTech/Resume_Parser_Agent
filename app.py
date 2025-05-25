@@ -24,10 +24,7 @@ for folder in folders:
             elif os.path.isdir(file_path):
                 shutil.rmtree(file_path)
 
-# ENTITY_VECTORSTORE_DIR_A1 = "resume_entities_chatbot"
-# if os.path.exists(ENTITY_VECTORSTORE_DIR_A1):
-#         print("[Entity Node] Removing old A1 vectorstore...")
-#         shutil.rmtree(ENTITY_VECTORSTORE_DIR_A1)
+
 
 agent = SupervisorAgent()
 # Initialize session state to handle page navigation
@@ -182,16 +179,7 @@ if st.session_state.page == "main":
             st.markdown('<div class="orange-box">Chat Mode</div>', unsafe_allow_html=True)
         if st.session_state.files:
             with st.container(height=100):
-                # if len(st.session_state.files) <= 3:
-                #     mode_options = ["Select a Mode", "Quick Compare", "Full Compare"]
-                # else:
-                #     mode_options = ["Select a Mode", "Full Compare"]  
-
-                # selected_mode = st.selectbox("Chat Mode Selector", mode_options, label_visibility="collapsed")
-                # #selected_mode = st.selectbox("Chat Mode Selector", ["Select a Mode", "Quick Compare", "Full Compare"], label_visibility="collapsed")
-                # if selected_mode != "Select a Mode":
-                #     st.session_state.chat_mode = "A1" if selected_mode == "Quick Compare" else "A2"
-                # st.markdown('</div>', unsafe_allow_html=True)
+                
                 available_modes = ["Full Compare"]
                 if len(st.session_state.files) <= 3:
                     available_modes.insert(0, "Quick Compare")
@@ -509,37 +497,4 @@ if st.session_state.page == "main":
                                     st.session_state.pending_response = False
                                     st.session_state.pending_prompt = None
                                     st.rerun()
-                        # with tab5:
-                        #     st.header("PDF Viewer")
-
-                        #     folder = "converted"
-                        #     os.makedirs(folder, exist_ok=True)
-
-                        #     # Find all PDFs in converted/
-                        #     pdf_files = [f for f in os.listdir(folder) if f.lower().endswith(".pdf")]
-
-                        #     if not pdf_files:
-                        #         st.info("No converted PDFs available yet.")
-                        #     else:
-                        #         selected_pdf = st.selectbox("Select a converted PDF to view:", pdf_files)
-
-                        #         if selected_pdf:
-                        #             pdf_path = os.path.join(folder, selected_pdf)
-
-                        #             if os.path.exists(pdf_path):
-                        #                 # Read PDF as base64
-                        #                 with open(pdf_path, "rb") as f:
-                        #                     base64_pdf = base64.b64encode(f.read()).decode("utf-8")
-
-                        #                 # Display using iframe
-                        #                 pdf_display = f"""
-                        #                     <iframe
-                        #                         src="data:application/pdf;base64,{base64_pdf}"
-                        #                         width="100%"
-                        #                         height="1000"
-                        #                         type="application/pdf"
-                        #                     ></iframe>
-                        #                 """
-                        #                 st.components.v1.html(pdf_display, height=1020)
-                        #             else:
-                        #                 st.error("File not found.")
+                      
