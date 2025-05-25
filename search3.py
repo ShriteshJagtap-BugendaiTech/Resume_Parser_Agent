@@ -106,7 +106,7 @@ def search_router(query: str, chat_mode: str, thread_id: str):
         response = invoke_with_fallback(messages, thread_id)
         #safe_output = html.escape(response["messages"][-1].content)
         print("The actual response is: ", response)
-        model_response= response["messages"][-1]["content"]  #response["messages"][-1].content
+        model_response= response["messages"][-1].content  #response["messages"][-1]["content"]
         
     final_response = f"{model_response.strip()}" #\n\n\n### Resume Links:\n{links_text}
     return final_response
