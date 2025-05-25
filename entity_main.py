@@ -126,16 +126,3 @@ def extract_clean_json(text):
         return match.group(1)
     return None
 
-# def extract_clean_json(text: str) -> str:
-#     # First try to extract from a code block
-#     code_block_match = re.search(r"```(?:json)?\s*([\s\S]*?)```", text)
-#     if code_block_match:
-#         return code_block_match.group(1).strip()
-
-#     # Fallback: extract first JSON-looking object (non-greedy)
-#     brace_match = re.search(r"(\{.*?\})", text, re.DOTALL)
-#     if brace_match:
-#         return brace_match.group(1).strip()
-
-#     # Final fallback: return full text
-#     return text
