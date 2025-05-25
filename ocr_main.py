@@ -49,7 +49,7 @@ class OCRHandler:
             "Authorization": f"Bearer {groq_api_key}",
             "Content-Type": "application/json"
         }
-        self.paddle = PaddleOCR(use_angle_cls=True, lang='en')
+        self.paddle = PaddleOCR(use_angle_cls=True, lang='en',use_gpu=False)
 
     def ocr_image(self, image: Image.Image) -> str:
         for model in self.models:
