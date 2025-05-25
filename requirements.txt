@@ -15,4 +15,4 @@ langgraph
 faiss-cpu
 requests
 paddlepaddle
-torch
+
