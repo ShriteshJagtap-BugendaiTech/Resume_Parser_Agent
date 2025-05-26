@@ -7,6 +7,8 @@ import base64
 import urllib.parse
 import shutil
 # Initialize SupervisorAgent
+import os
+os.environ["STREAMLIT_WATCH_USE_POLLING"] = "true"
 
 os.environ['GROQ_API_KEY'] = st.secrets["GROQ_API_KEY"]
 
