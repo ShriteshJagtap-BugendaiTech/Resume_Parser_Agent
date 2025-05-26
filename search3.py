@@ -102,17 +102,17 @@ def search_router(query: str, chat_mode: str, thread_id: str):
         model_response = result["final_output"]
 
     else:
-        try:
+        
             messages = [{"role": "user", "content": query}]
             response = invoke_with_fallback(messages, thread_id)
             #safe_output = html.escape(response["messages"][-1].content)
             #print("The actual response is: ", response)
             model_response= response["messages"][-1].content  #response["messages"][-1]["content"]
-        except:
-            try:
-                model_response= response["messages"][-1].content 
-            except:
-                model_response= "Sorry Not able to connect Please try after sometime."
+            if "<function>" in model_response or "<\function>" in model_response:
+                model_response= response["messages"][-1]["content"]
+            if "<function>" in model_response or "<\function>" in model_response:
+                model_response= "Sorry not able to connect please try again after sometime"
+           
         
     final_response = f"{model_response.strip()}" #\n\n\n### Resume Links:\n{links_text}
     return final_response
