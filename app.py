@@ -51,7 +51,7 @@ password1= st.secrets["PASSWORD"]
 def check_password():
     def login_form():
         with st.form("login_form", clear_on_submit=False):
-            st.image("https://cdn-icons-png.flaticon.com/512/3064/3064197.png", width=100)
+            
             st.markdown("""
                 <h2 style='text-align: center; color: #4B4B4B;'>Welcome to Resume Parser</h2>
                 <p style='text-align: center;'>Please log in to continue</p>
