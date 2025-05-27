@@ -87,11 +87,7 @@ def check_password():
 
         col1, col2, col3 = st.columns([1, 2, 1])
         with col2:
-            st.markdown("""
-                <div style='background-color: #0e1117; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);'>
-            """, unsafe_allow_html=True)
             login_form()
-            st.markdown("</div>", unsafe_allow_html=True)
 
         st.stop()
 
