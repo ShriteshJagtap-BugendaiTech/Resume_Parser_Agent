@@ -51,10 +51,9 @@ password1= st.secrets["PASSWORD"]
 def check_password():
     def login_form():
         with st.form("login_form", clear_on_submit=False):
-            
             st.markdown("""
-                <h2 style='text-align: center; color: #4B4B4B;'>Welcome to Resume Parser</h2>
-                <p style='text-align: center;'>Please log in to continue</p>
+                <h2 style='text-align: center; color: white;'>Welcome to Resume Parser</h2>
+                <p style='text-align: center; color: white;'>Please log in to continue</p>
             """, unsafe_allow_html=True)
 
             st.markdown("""<div style='margin-top:20px'></div>""", unsafe_allow_html=True)
@@ -76,19 +75,20 @@ def check_password():
         st.session_state.authenticated = False
 
     if not st.session_state.authenticated:
-        # Center the form layout
+        # Center the form layout and remove white block
         st.markdown("""
             <style>
                 .block-container {
                     padding-top: 3rem;
                 }
+                header {visibility: hidden;}
             </style>
         """, unsafe_allow_html=True)
 
         col1, col2, col3 = st.columns([1, 2, 1])
         with col2:
             st.markdown("""
-                <div style='background-color: #f9f9f9; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);'>
+                <div style='background-color: #0e1117; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);'>
             """, unsafe_allow_html=True)
             login_form()
             st.markdown("</div>", unsafe_allow_html=True)
