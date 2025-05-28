@@ -106,8 +106,9 @@ def search_router(query: str, chat_mode: str, thread_id: str):
             messages = [{"role": "user", "content": query}]
             response = invoke_with_fallback(messages, thread_id)
             #safe_output = html.escape(response["messages"][-1].content)
-            #print("The actual response is: ", response)
+            print("The actual response is: ", response)
             model_response= response["messages"][-1].content  #response["messages"][-1]["content"]
+            print("The response from llm",model_response)
             # if "<function>" in model_response or "<\function>" in model_response:
             #     model_response= response["messages"][-1]["content"]
             # if "<function>" in model_response or "<\function>" in model_response:
