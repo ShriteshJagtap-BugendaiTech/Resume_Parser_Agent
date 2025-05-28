@@ -108,10 +108,10 @@ def search_router(query: str, chat_mode: str, thread_id: str):
             #safe_output = html.escape(response["messages"][-1].content)
             #print("The actual response is: ", response)
             model_response= response["messages"][-1].content  #response["messages"][-1]["content"]
-            if "<function>" in model_response or "<\function>" in model_response:
-                model_response= response["messages"][-1]["content"]
-            if "<function>" in model_response or "<\function>" in model_response:
-                model_response= "Sorry not able to connect please try again after sometime"
+            # if "<function>" in model_response or "<\function>" in model_response:
+            #     model_response= response["messages"][-1]["content"]
+            # if "<function>" in model_response or "<\function>" in model_response:
+            #     model_response= "Sorry not able to connect please try again after sometime"
            
         
     final_response = f"{model_response.strip()}" #\n\n\n### Resume Links:\n{links_text}
