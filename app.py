@@ -1,3 +1,5 @@
+import os
+os.environ["PDX_EAGER_INITIALIZATION"] = "0"
 import streamlit as st
 from supervisor_main import SupervisorAgent
 import json
