@@ -1,26 +1,18 @@
-streamlit==1.38.0
-pandas==2.2.3
-numpy==1.26.4
-Pillow==10.4.0
-PyMuPDF==1.24.4
-requests==2.32.3
-
-# OCR
-paddleocr==2.9.1
-paddlepaddle==2.6.2
-
-# LangChain stack (old-style APIs with langchain.schema)
-langchain==0.1.20
-langchain-core==0.1.52
-langchain-community==0.0.38
-langchain-openai==0.1.7
-langchain-groq==0.1.10
-langchain-huggingface==1.0.1
-
-# LangGraph
-langgraph==0.0.64
-
-# Vector / embeddings
-faiss-cpu==1.8.0.post1
-sentence-transformers==3.1.1
-
+streamlit 
+pandas 
+numpy 
+Pillow 
+PyMuPDF 
+paddleocr==2.9.1 
+paddlepaddle==2.6.2 
+langchain 
+langchain-core 
+langchain-openai 
+langchain-ollama 
+langchain-groq 
+langchain-community 
+langchain-huggingface 
+langgraph 
+faiss-cpu 
+requests 
+sentence-transformers
