@@ -49,7 +49,7 @@ Here is the resume text to parse:
     try:
         #print("[resume_entity_extractor] Trying Groq...")
         llm = ChatOpenAI(
-            model="llama3-70b-8192",
+            model="llama-3.3-70b-versatile",
             base_url="https://api.groq.com/openai/v1",
             api_key=st.secrets["GROQ_API_KEY"],
             temperature=0.2,
