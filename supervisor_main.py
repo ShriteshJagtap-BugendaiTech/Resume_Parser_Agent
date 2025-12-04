@@ -59,6 +59,7 @@ class SupervisorState(TypedDict):
     answer: str
     query: str
     chat_mode: str  
+    ocr_retries: int
 
 # === Node 1: OCR (uses tested working pipeline)
 def ocr_node(state: SupervisorState) -> SupervisorState:
@@ -177,7 +178,20 @@ def qa_node(state: SupervisorState) -> SupervisorState:
 def supervisor_router(state: SupervisorState) -> Union[str, List[str]]:
     
     if not state.get("extracted_texts"):
-        return END
+        retries = state.get("ocr_retries", 0)
+        if retries < MAX_OCR_RETRIES:
+            print("[Supervisor] No text; retrying OCR...")
+            # bump retry count for next run of ocr_step
+            state["ocr_retries"] = retries + 1
+            return "ocr_step"      # 👈 allowed now because mapping includes it
+        else:
+            msg = "OCR could not extract text from the uploaded files. Please check the PDFs or upload clearer files."
+            print("[Supervisor]", msg)
+            try:
+                st.error(msg)
+            except Exception:
+                pass
+            return END
     
     
     next_steps = []
@@ -207,7 +221,7 @@ builder.add_edge("qa_step", END)
 compiled_graph = builder.compile()
 memory = MemorySaver()
 pipeline = compiled_graph.with_config({"checkpointer": memory})
-
+MAX_OCR_RETRIES = 2
 # === Wrapper Class
 class SupervisorAgent:
     def run(self, files: List[Union[str, Path]], query: str, chat_mode: str) -> Dict:
@@ -218,7 +232,8 @@ class SupervisorAgent:
             "entities": [],
             "answer": "",
             "query": query,
-            "chat_mode": chat_mode
+            "chat_mode": chat_mode,
+            "ocr_retries": 0,
         }
 
         final_state = {
