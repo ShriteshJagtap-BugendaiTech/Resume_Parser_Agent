@@ -2,7 +2,9 @@ import os
 import json
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain.schema import Document, HumanMessage
+# from langchain.schema import Document, HumanMessage
+from langchain_core.documents import Document
+from langchain_core.messages import HumanMessage
 from langchain_groq import ChatGroq
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.prebuilt import create_react_agent
