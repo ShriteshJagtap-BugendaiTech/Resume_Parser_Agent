@@ -209,7 +209,7 @@ builder.add_node("ocr_step", RunnableLambda(ocr_node))
 builder.add_node("entity_extraction_step", RunnableLambda(entity_extraction_node))
 builder.add_node("qa_step", RunnableLambda(qa_node))
 builder.set_entry_point("ocr_step")
-builder.add_conditional_edges("ocr_step", supervisor_router, {
+builder.add_conditional_edges("ocr_step", supervisor_router, {"ocr_step": "ocr_step", 
     "entity_extraction_step": "entity_extraction_step",
     "qa_step": "qa_step",
     END: END
