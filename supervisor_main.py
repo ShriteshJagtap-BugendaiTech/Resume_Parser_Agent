@@ -177,7 +177,7 @@ def qa_node(state: SupervisorState) -> SupervisorState:
 def supervisor_router(state: SupervisorState) -> Union[str, List[str]]:
     
     if not state.get("extracted_texts"):
-        return "ocr_step"
+        return END
     
     
     next_steps = []
