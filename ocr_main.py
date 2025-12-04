@@ -10,7 +10,8 @@ from paddleocr import PaddleOCR
 from langgraph.graph import StateGraph
 from langgraph.checkpoint.memory import MemorySaver
 from langchain_core.runnables import RunnableLambda
-from langchain.schema import Document
+# from langchain.schema import Document
+from langchain_core.documents import Document
 from vectorstore import load_vectorstore, create_vectorstore_from_docs
 import requests
 import streamlit as st
