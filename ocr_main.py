@@ -42,8 +42,7 @@ class OCRHandler:
     def __init__(self, groq_api_key: str):
         self.api_key = groq_api_key
         self.models = [
-            "llama-3.2-90b-vision-preview",
-            "llama-3.2-11b-vision-preview",
+            "meta-llama/llama-4-maverick-17b-128e-instruct",
             "meta-llama/llama-4-scout-17b-16e-instruct"
         ]
         self.headers = {
