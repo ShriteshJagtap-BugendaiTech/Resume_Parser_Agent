@@ -52,10 +52,10 @@ checkpointer = MemorySaver()
 groq_api_key =st.secrets["GROQ_API_KEY"]
 
 models = [
+    ChatGroq(api_key=groq_api_key, model_name="meta-llama/llama-guard-4-12b"),
     ChatGroq(api_key=groq_api_key, model_name="llama-3.3-70b-versatile"),
-    ChatGroq(api_key=groq_api_key, model_name="llama3-70b-8192"),
     ChatGroq(api_key=groq_api_key, model_name="llama-3.1-8b-instant"),
-    ChatGroq(api_key=groq_api_key, model_name="mistral-saba-24b")
+    ChatGroq(api_key=groq_api_key, model_name="whisper-large-v3")
 ]
 
 agent_prompt = """
