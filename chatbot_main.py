@@ -30,7 +30,7 @@ if the user asks a question that is not related to resumes, kindly decline reque
     try:
         print("→ Using Groq...")
         llm = ChatOpenAI(
-            model="llama3-70b-8192",
+            model="llama-3.3-70b-versatile",
             base_url="https://api.groq.com/openai/v1",
             api_key=st.secrets["GROQ_API_KEY"],
             temperature=0.2,
